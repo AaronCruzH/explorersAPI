@@ -8,4 +8,8 @@ describe("Unit Testing ExplorerController",()=>{
         const explorers = ExplorerController.filterCheckedEmails();
         expect(explorers).toBeDefined();
     });
+    test("filterCheckedCredits, devuelve el nombre de los explorers con más de 500 credits",()=>{
+        const explorers = ExplorerController.filterCheckedCredits();
+        expect(explorers).toBeDefined();
+    });
 });

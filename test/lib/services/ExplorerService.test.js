@@ -8,4 +8,8 @@ describe("Unit Testing Clase ExplorerService",()=>{
         const explorers = ExplorerService.getCheckedEmails();
         expect(explorers).toBeDefined();
     });
+    test("Metodo getCheckedCredits, regresa los estudiantes con más de 500 creditos",()=>{
+        const explorers = ExplorerService.getCheckedCredits();
+        expect(explorers).toBeDefined();
+    });
 });

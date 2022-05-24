@@ -6,8 +6,6 @@ describe("Unit Testing Clase ExplorerService",()=>{
     })
     test("Metodo getCheckedEmails, regresa los emails de los explorers que tienen certificacion",()=>{
         const explorers = ExplorerService.getCheckedEmails()
-        const check = true
-        explorers.forEach((explorer)=>{if(explorer.haveCertification==false){check = false}})
-        expect(check).toBe(true)
+        expect(explorers).toBeDefined()
     })
 })
